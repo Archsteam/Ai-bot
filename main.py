@@ -33,7 +33,7 @@ async def is_admins(chat_id: int):
 
 @bot.on_message(filters.command("start"))
 async def start(client, message):
-        await message.reply_text("Hi! My name is [CHAT-AI](https://t.me/STAR_FAMILY_OP). I'm an AI CHATBOT")
+        await message.reply_text("Hi! My name is [CHAT-AI](https://t.me/STAR_FAMILY_CHANNEL). I'm an AI CHATBOT")
 
 
 @bot.on_message(
@@ -86,7 +86,7 @@ async def chatboton(client, message):
     filters.command("chatbot", prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def chatbot(client, message):
-    await message.reply_text(f"**Usage:**\n/chatbot [on|off] only in groups. \n ✧Join:-@STAR_FAMILY_OP✧. ")
+    await message.reply_text(f"**Usage:**\n/chatbot [on|off] only in groups. \n ✧Join:-@STAR_FAMILY_CHANNEL✧. ")
 
 
 @bot.on_message(
